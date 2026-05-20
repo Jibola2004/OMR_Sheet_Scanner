@@ -7,7 +7,7 @@ A flexible, configuration-driven Optical Mark Recognition (OMR) pipeline built w
 ## 🚀 Pipeline Workflow
 
 The script executes a sequential computer vision engine across the following stages:
-https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/pipeline_workflow.png
+![Alt Text](https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/pipeline_workflow.png)
 
 ---
 
@@ -15,12 +15,14 @@ https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/pipeline_w
 
 ### 1. Contour Detection & Perspective Warp
 
+![Alt Text](https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/contour_and_wrap.png)
 The pipeline isolates the largest quadrilateral boundary matching a standard 4-corner document configuration and applies an aspect-ratio accurate perspective transform to square up skewed, rotated, or angled sheets.
 
 ### 2. Slicing & Thresholding Matrix
 
 The warped image framework is sliced into continuous independent section columns based on grid settings inside your `config.json` profile. A binary inverse thresholding operations loop shifts the data map to absolute black-and-white to evaluate filled bubble pixel volumes cleanly.
-
+![Alt Text](https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/column_split.png)
+![Alt Text](https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/column_split_threshold.png)
 ---
 
 ## ⚙️ Configuration Properties (`config.json`)
