@@ -7,6 +7,7 @@ A flexible, configuration-driven Optical Mark Recognition (OMR) pipeline built w
 ## 🚀 Pipeline Workflow
 
 The script executes a sequential computer vision engine across the following stages:
+https://github.com/Jibola2004/OMR_Sheet_Scanner/blob/main/docs/images/pipeline_workflow.png
 
 ---
 
