@@ -1,0 +1,26 @@
+# === Virtual Environments ===
+.venv/
+venv/
+ENV/
+env/
+
+# === Python Cache & Compiled Files ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Pipeline Runtime Outputs & Local Cache ===
+# Keeps your core defaults trackable but ignores local runtime modifications
+config.json
+
+# === Image & Testing Data ===
+# Ignores large raw testing sheets while keeping the folder structure intact
+test_images/*
+# Exception: Keep your baseline demo image tracked so others can test the project right away
+!test_images/real_demo_19.jpeg
+
+# === Operating System Noise ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
